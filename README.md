@@ -7,7 +7,7 @@ based on Alpine.
 ## Usage
 
 ```
-docker run -p 25:25 nailgun/postfix -e myhostname=mail.example.com mynetworks=0.0.0.0/0 
+docker run -p 25:25 smpio/postfix -e myhostname=mail.example.com mynetworks=0.0.0.0/0 
 ```
 
 All arguments are passed to [postconf](http://www.postfix.org/postconf.1.html) utility
@@ -17,5 +17,5 @@ postconf also can be run multiple times before starting the server, just split a
 with colon `:`, e.g.
 
 ```
-docker run -p 25:25 nailgun/postfix -e myhostname=mail.example.com : -e mynetworks=0.0.0.0/0 
+docker run -p 25:25 smpio/postfix -e myhostname=mail.example.com : -e mynetworks=0.0.0.0/0 
 ```
