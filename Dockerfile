@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add -U postfix socat \
+RUN apk add -U postfix socat bash \
     && rm -rf /var/cache/apk/*
 
 COPY entrypoint.sh /
